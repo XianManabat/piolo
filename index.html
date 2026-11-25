@@ -1,233 +1,194 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Piolo Justine Sese</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap">
 <style>
-/* Layout: NORD-style storefront rhythm. Giant serif wordmark with a framed photo on a concrete plinth, black stage strip, taupe feature panel, hairline split sections. */
+/* Layout: NORD storefront. Top bar, nav with centered serif logo, giant serif wordmark with a framed photo on a concrete block, black category strip, taupe feature banner, service row, card shelf. Light theme only. */
 :root {
-  --bg: #ECE7DC;
-  --panel: #F5F1E7;
-  --ink: #181614;
-  --muted: #5E584E;
-  --line: rgba(24, 22, 20, 0.2);
-  --stone: #D2C9B7;
-  --accent: #6F6252;
-  --band: #121110;
-  --band-ink: #EFEAE0;
-  --band-muted: #A9A296;
-  --band-line: rgba(239, 234, 224, 0.22);
-  --bar-bg: #6F6556;
-  --bar-ink: #F5F1E7;
-  --btn-bg: #181614;
-  --btn-ink: #F5F1E7;
-  --blk-top: #D8D1C2;
-  --blk-face: #B3AA98;
-  --rock: #8C8272;
-  --ph-a: #D2C9B7;
-  --ph-b: #A79D8A;
-  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", "Times New Roman", serif;
-  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bg: #EDE8DC;
+  --paper: #F5F1E7;
+  --bone: #E3DDCF;
+  --ink: #161412;
+  --muted: #5F594F;
+  --line: rgba(22, 20, 18, 0.18);
+  --taupe: #CFC6B5;
+  --bar: #7A705F;
+  --black: #111010;
+  --on-black: #EDE8DC;
+  --on-black-muted: #A9A296;
+  --blk-top: #D3CBBB;
+  --blk-face: #BCB3A1;
+  --rock: #8E8473;
+  --ph-a: #D3CBBB;
+  --ph-b: #A99F8C;
+  --display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #151412; --panel: #1E1C19; --ink: #EFEAE0; --muted: #AEA799;
-    --line: rgba(239, 234, 224, 0.2); --stone: #2B2824; --accent: #CDBFA6;
-    --band: #0A0908; --band-ink: #EFEAE0; --band-muted: #A9A296; --band-line: rgba(239, 234, 224, 0.22);
-    --bar-bg: #2A2722; --bar-ink: #EFEAE0; --btn-bg: #EFEAE0; --btn-ink: #151412;
-    --blk-top: #4E483E; --blk-face: #3A352D; --rock: #2B2822; --ph-a: #3A352D; --ph-b: #55503F;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #151412; --panel: #1E1C19; --ink: #EFEAE0; --muted: #AEA799;
-  --line: rgba(239, 234, 224, 0.2); --stone: #2B2824; --accent: #CDBFA6;
-  --band: #0A0908; --band-ink: #EFEAE0; --band-muted: #A9A296; --band-line: rgba(239, 234, 224, 0.22);
-  --bar-bg: #2A2722; --bar-ink: #EFEAE0; --btn-bg: #EFEAE0; --btn-ink: #151412;
-  --blk-top: #4E483E; --blk-face: #3A352D; --rock: #2B2822; --ph-a: #3A352D; --ph-b: #55503F;
-  color-scheme: dark;
-}
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body {
-  background: var(--bg); color: var(--ink);
-  font-family: var(--font-body); font-size: 16px; line-height: 1.65;
-  overflow-x: clip;
-}
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 40; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.65; overflow-x: clip; }
+[hidden] { display: none !important; }
 a { color: inherit; }
-h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.02; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1, h2, h3 { margin: 0; line-height: 1.02; text-wrap: balance; }
 p { margin: 0; max-width: 62ch; }
-em { font-style: italic; font-weight: 400; color: var(--accent); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-section[id] { scroll-margin-top: 76px; }
+section[id] { scroll-margin-top: 80px; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .inner { max-width: 1180px; margin: 0 auto; }
-.pad { padding-block: 84px; }
-.label { font: 600 11px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.pad { padding-block: 80px; }
+section { border-bottom: 1px solid var(--line); }
+.label { font: 600 10px var(--sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.title { font: 600 clamp(36px, 5.6vw, 76px)/0.98 var(--sans); letter-spacing: -0.035em; text-transform: uppercase; }
+.title.sm { font-size: clamp(28px, 3.4vw, 44px); }
 
-.btn { display: inline-flex; align-items: center; gap: 10px; background: var(--btn-bg); color: var(--btn-ink); border: 1px solid var(--btn-bg); padding: 13px 24px; font: 600 11px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: transform 0.15s ease; }
+.btn { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: var(--paper); border: 1px solid var(--ink); padding: 12px 22px; font: 600 10px var(--sans); letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: transform 0.15s ease; }
 .btn:hover { transform: translateY(-2px); }
-.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
 
 /* top bar and nav */
-.topbar { background: var(--bar-bg); color: var(--bar-ink); font: 500 10px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; }
-.topbar .inner { display: flex; justify-content: space-between; gap: 16px; padding-block: 9px; }
-.topbar span:nth-child(2) { text-align: center; }
-.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); }
-.navgrid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding-block: 16px; }
-.logo { font-family: var(--font-display); font-weight: 700; font-size: 26px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; line-height: 1; grid-column: 2; }
-.links { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; font: 500 11px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; }
+.topbar { background: var(--bar); color: var(--paper); font: 500 9px var(--sans); letter-spacing: 0.18em; text-transform: uppercase; }
+.topbar .inner { display: flex; justify-content: space-between; gap: 16px; padding-block: 8px; }
+.nav { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); }
+.navgrid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding-block: 18px; }
+.logo { grid-column: 2; font: 800 30px/1 var(--display); letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none; }
+.links { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; }
 .links.l { grid-column: 1; grid-row: 1; justify-self: start; }
 .links.r { grid-column: 3; grid-row: 1; justify-self: end; }
 .links a { text-decoration: none; padding-block: 6px; }
 .links a:hover { text-decoration: underline; text-underline-offset: 6px; }
-.menu-btn { display: none; background: none; border: 1px solid var(--ink); color: var(--ink); padding: 8px 14px; font: 600 11px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; }
+.menu-btn { display: none; background: none; border: 1px solid var(--ink); color: var(--ink); padding: 8px 14px; font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; }
 
 /* hero */
-.hero { --wm: clamp(84px, 24vw, 320px); border-bottom: 1px solid var(--line); overflow: clip; padding-top: 40px; }
-.eyebrow { text-align: center; max-width: none; margin: 0 0 14px; font: 600 11px var(--font-body); letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
-.wordmark { font-family: var(--font-display); font-weight: 700; font-size: var(--wm); line-height: 0.82; letter-spacing: -0.02em; text-transform: uppercase; text-align: center; position: relative; z-index: 0; }
+.hero { --wm: clamp(84px, 24.5vw, 330px); overflow: clip; padding-top: 28px; }
+.wordmark { font-family: var(--display); font-weight: 800; font-size: var(--wm); line-height: 0.84; letter-spacing: -0.02em; text-transform: uppercase; text-align: center; position: relative; z-index: 0; }
 .stage-row { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr minmax(260px, 520px) 1fr; gap: 32px; align-items: center; margin-top: calc(var(--wm) * -0.17); }
-.side { display: grid; gap: 18px; justify-items: start; }
+.side { display: grid; gap: 16px; justify-items: start; }
 .side.r { justify-items: end; text-align: right; }
-.kicker { font: 500 14px/1.45 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase; }
-.plinth { width: 100%; }
-.frame { position: relative; width: 56%; margin: 0 auto; aspect-ratio: 4 / 5; background: var(--ph-a); border: 8px solid var(--panel); box-shadow: 0 20px 44px rgba(0, 0, 0, 0.2); overflow: hidden; z-index: 2; }
+.kicker { font: 500 13px/1.5 var(--sans); letter-spacing: 0.04em; text-transform: uppercase; }
+.kicker b { font-weight: 600; }
+.plinth { margin: 0; width: 100%; }
+.frame { position: relative; width: 56%; margin: 0 auto; aspect-ratio: 4 / 5; background: var(--ph-a); border: 8px solid var(--paper); box-shadow: 0 20px 44px rgba(0, 0, 0, 0.2); overflow: hidden; z-index: 2; }
 .block { position: relative; z-index: 1; height: clamp(70px, 12vw, 108px); margin-top: -6px; background: linear-gradient(180deg, var(--blk-top) 0, var(--blk-top) 20%, var(--blk-face) 20%, var(--blk-face) 100%); }
 .rock { height: clamp(90px, 15vw, 150px); width: 84%; margin: -1px auto 0; background: var(--rock); clip-path: polygon(0 0, 100% 0, 97% 24%, 100% 50%, 93% 72%, 96% 100%, 7% 100%, 3% 76%, 8% 52%, 1% 28%); }
 
-/* photo placeholders, built from shapes. To use a real photo, put an <img> inside and add class has-img. */
+/* photo placeholders. To use a real photo, put an <img> inside and add class has-img */
 .ph { position: relative; background: var(--ph-a); overflow: hidden; }
-.ph::before { content: ""; position: absolute; left: 50%; bottom: -8%; width: 78%; aspect-ratio: 1 / 1.25; transform: translateX(-50%); background: var(--ph-b); border-radius: 50% 50% 0 0 / 40% 40% 0 0; }
+.ph::before { content: ""; position: absolute; left: 50%; bottom: -8%; width: 78%; aspect-ratio: 1 / 1.25; transform: translateX(-50%); background: var(--ph-b); border-radius: 50% 50% 0 0 / 40% 40%  0 0; }
 .ph::after { content: ""; position: absolute; left: 50%; top: 20%; width: 30%; aspect-ratio: 1; transform: translateX(-50%); background: var(--bg); border-radius: 50%; border: 1px solid var(--ph-b); }
 .ph.alt::before { width: 60%; left: 32%; border-radius: 999px 999px 0 0; }
 .ph.alt::after { left: 72%; top: 30%; width: 36%; background: var(--ph-b); border-color: transparent; }
-.ph .tag { position: absolute; left: 10px; bottom: 10px; z-index: 2; font: 600 9px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); background: var(--panel); padding: 4px 8px; }
+.ph .tag { position: absolute; left: 10px; bottom: 10px; z-index: 2; font: 600 9px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); background: var(--paper); padding: 4px 8px; }
 .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
 .ph.has-img::before, .ph.has-img::after, .ph.has-img .tag { display: none; }
-.thumb { width: 64px; aspect-ratio: 4 / 5; flex: none; }
 
-/* marquee */
-.band { background: var(--band); color: var(--band-ink); overflow: hidden; border-block: 1px solid var(--band-line); }
-.track { display: flex; width: max-content; animation: slide 36s linear infinite; }
-.track span { padding: 13px 24px; font: 500 11px var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap; display: inline-flex; align-items: center; gap: 24px; }
-.track span::after { content: ""; width: 6px; height: 6px; background: var(--band-ink); transform: rotate(45deg); }
-@keyframes slide { to { transform: translateX(-50%); } }
+/* black category strip */
+.strip { background: var(--black); color: var(--on-black); border-bottom: 0; }
+.strip .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.strip .item { display: flex; gap: 16px; align-items: center; padding: 30px 24px 30px 0; }
+.strip .item + .item { padding-left: 24px; }
+.strip .thumb { width: 60px; aspect-ratio: 4 / 5; flex: none; --ph-a: #CFC6B5; --ph-b: #8E8473; --bg: #111010; }
+.strip .txt { display: grid; gap: 3px; min-width: 0; }
+.strip h3 { font: 600 14px var(--sans); letter-spacing: 0.1em; text-transform: uppercase; }
+.strip p { font-size: 12px; color: var(--on-black-muted); line-height: 1.4; }
+.strip a { margin-top: 8px; font: 600 9px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--on-black); justify-self: start; }
 
-/* about */
-section { border-bottom: 1px solid var(--line); }
+/* feature banner */
+.banner { background: linear-gradient(100deg, #DAD3C5 0%, #CFC6B5 45%, #BAB09D 100%); }
+.banner .inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.banner .stack { display: grid; gap: 18px; justify-items: start; padding-block: 72px; }
+.banner blockquote { margin: 0; font: 600 clamp(30px, 4.4vw, 56px)/1.04 var(--sans); letter-spacing: -0.03em; text-wrap: balance; }
+.banner .sub { color: var(--muted); font-size: 15px; }
+.slab { width: 100%; max-width: 440px; justify-self: center; display: grid; padding-top: 40px; }
+.slab .ph { width: 56%; aspect-ratio: 4 / 5; margin: 0 auto; border: 8px solid var(--paper); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22); z-index: 2; }
+.slab .block { height: 84px; }
+
+/* service row */
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); }
+.fact { display: flex; gap: 14px; align-items: center; padding: 28px 20px 28px 0; }
+.fact + .fact { padding-left: 24px; }
+.fact svg { width: 28px; height: 28px; flex: none; stroke: var(--ink); fill: none; stroke-width: 1.4; }
+.fact b { display: block; font: 600 10px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; }
+.fact span { color: var(--muted); font-size: 12px; }
+
+/* welcome */
 .split { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: start; }
 .split > * { min-width: 0; }
 .split.flip > .fig { order: -1; }
 .stack { display: grid; gap: 20px; justify-items: start; align-content: start; }
 .stack p { color: var(--muted); }
-.stack .lede { color: var(--ink); }
-h2.big { font-size: clamp(40px, 6vw, 84px); }
-.lede { font-family: var(--font-display); font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; color: var(--ink); max-width: 30ch; text-wrap: balance; }
+.stack .lede { color: var(--ink); font: 500 clamp(18px, 2vw, 22px)/1.35 var(--sans); max-width: 34ch; letter-spacing: -0.01em; }
 .expect { display: grid; border-top: 1px solid var(--line); margin: 0; padding: 0; list-style: none; }
 .expect li { display: grid; grid-template-columns: 64px 1fr; gap: 16px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
-.expect b { font-family: var(--font-display); font-weight: 500; font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+.expect b { font: 800 44px/1 var(--display); font-variant-numeric: tabular-nums; }
 .expect span { color: var(--muted); font-size: 15px; }
 
-/* stage strip */
-.strip { background: var(--band); color: var(--band-ink); }
-.strip .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-.strip .item { display: flex; gap: 16px; align-items: center; padding: 30px 24px 30px 0; }
-.strip .item + .item { padding-left: 24px; border-left: 1px solid var(--band-line); }
-.strip .thumb { --ph-a: #3A352D; --ph-b: #6B6355; --bg: #0F0E0D; }
-.strip .txt { display: grid; gap: 4px; min-width: 0; }
-.strip .st { font: 600 10px var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; color: var(--band-muted); }
-.strip h3 { font-size: 24px; }
-.strip p { font-size: 13px; color: var(--band-muted); line-height: 1.45; }
-.strip a { margin-top: 6px; font: 600 10px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--band-ink); justify-self: start; }
-
-/* feature panel */
-.feature { background: var(--stone); }
-.feature .split { align-items: center; }
-.feature blockquote { margin: 0; font-family: var(--font-display); font-weight: 500; font-size: clamp(30px, 4.6vw, 60px); line-height: 1.06; text-wrap: balance; }
-.feature .board { aspect-ratio: auto; display: grid; place-items: center; }
-.slab { width: 100%; max-width: 440px; display: grid; }
-.slab .ph { width: 58%; aspect-ratio: 4 / 5; margin: 0 auto; border: 8px solid var(--panel); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2); z-index: 2; }
-.slab .block { height: 72px; }
-
-/* facts row */
-.facts { display: grid; grid-template-columns: repeat(4, 1fr); }
-.fact { display: flex; gap: 14px; align-items: center; padding: 30px 20px 30px 0; }
-.fact + .fact { padding-left: 24px; border-left: 1px solid var(--line); }
-.fact svg { width: 30px; height: 30px; flex: none; stroke: var(--ink); fill: none; stroke-width: 1.4; }
-.fact b { display: block; font: 600 11px var(--font-body); letter-spacing: 0.1em; text-transform: uppercase; }
-.fact span { color: var(--muted); font-size: 13px; }
-
 /* stage sections */
-.fig { display: grid; gap: 12px; }
-.board { background: var(--stone); padding: 36px; display: grid; place-items: center; }
-.board .ph { width: min(100%, 340px); aspect-ratio: 4 / 5; border: 8px solid var(--panel); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16); }
-figcaption { font-size: 12px; color: var(--muted); letter-spacing: 0.02em; }
+.fig { display: grid; gap: 12px; margin: 0; }
+.board { background: var(--taupe); padding: 36px; display: grid; place-items: center; }
+.board .ph { width: min(100%, 340px); aspect-ratio: 4 / 5; border: 8px solid var(--paper); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16); }
+figcaption { font-size: 12px; color: var(--muted); }
 .moments { list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--line); width: 100%; }
 .moments li { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 15px; color: var(--muted); display: flex; gap: 14px; }
 .moments li::before { content: ""; width: 7px; height: 7px; background: var(--ink); transform: rotate(45deg); margin-top: 9px; flex: none; }
 
-/* values band */
-.names .inner { display: flex; justify-content: space-between; align-items: center; gap: 20px 32px; flex-wrap: wrap; padding-block: 30px; font-family: var(--font-display); font-size: 30px; }
-.names .inner span:nth-child(2) { font-style: italic; }
-.names .inner span:nth-child(3) { font: 600 15px var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; }
-.names .inner span:nth-child(4) { font-weight: 700; }
-
 /* theories */
-.center { text-align: center; display: grid; gap: 20px; justify-items: center; }
+.center { text-align: center; display: grid; gap: 18px; justify-items: center; }
 .center p { color: var(--muted); }
 .acc { border-top: 1px solid var(--line); }
-details { border-bottom: 1px solid var(--line); background: var(--panel); }
+details { border-bottom: 1px solid var(--line); background: var(--paper); }
 details:last-child { border-bottom: 0; }
 summary { list-style: none; cursor: pointer; display: block; }
 summary::-webkit-details-marker { display: none; }
 .sumrow { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 26px; }
-summary .name { display: grid; gap: 6px; }
-summary .t { font-family: var(--font-display); font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; }
-summary .s { font: 600 11px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
-.plus { font: 300 32px/1 var(--font-body); transition: transform 0.2s ease; flex: none; }
+summary .name { display: grid; gap: 8px; }
+summary .t { font: 600 clamp(24px, 3.2vw, 38px)/1.05 var(--sans); letter-spacing: -0.03em; text-transform: uppercase; }
+summary .s { font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.plus { font: 300 32px/1 var(--sans); transition: transform 0.2s ease; flex: none; }
 details[open] .plus { transform: rotate(45deg); }
 .rows { margin: 0; padding-bottom: 30px; }
 .rows > div { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; padding: 18px 0; border-top: 1px solid var(--line); }
-.rows dt { font: 600 11px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); padding-top: 4px; }
+.rows dt { font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; padding-top: 5px; }
 .rows dd { margin: 0; color: var(--muted); font-size: 15.5px; max-width: 70ch; }
 .rows dd b { color: var(--ink); font-weight: 600; }
-.pill { display: inline-block; border: 1px solid var(--ink); padding: 3px 12px; font: 600 11px var(--font-body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+.pill { display: inline-block; border: 1px solid var(--ink); padding: 3px 12px; font: 600 10px var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
 
-/* timeline */
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-.chip { background: transparent; color: var(--ink); border: 1px solid var(--ink); padding: 8px 16px; font: 600 11px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; }
-.chip[aria-pressed="true"] { background: var(--btn-bg); color: var(--btn-ink); border-color: var(--btn-bg); }
-.count { font-size: 13px; color: var(--muted); margin-top: 14px; max-width: none; }
-.tl { list-style: none; margin: 40px 0 0; padding: 0; border-left: 1px solid var(--line); }
-.tl li { position: relative; display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 0 0 44px 32px; }
-.tl li:last-child { padding-bottom: 0; }
-.tl li::before { content: ""; position: absolute; left: -6px; top: 14px; width: 11px; height: 11px; background: var(--ink); transform: rotate(45deg); }
-.when { display: grid; gap: 4px; align-content: start; }
-.yr { font-family: var(--font-display); font-size: 40px; line-height: 1; font-variant-numeric: tabular-nums; }
-.age { font: 600 10px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
-.what { display: grid; gap: 10px; justify-items: start; }
-.what h3 { font-size: 30px; }
-.what p { color: var(--muted); font-size: 15.5px; }
-.what .why b { color: var(--ink); font-weight: 600; }
+/* timeline shelf */
+.shelf-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px 32px; flex-wrap: wrap; }
+.shelf-head .stack { gap: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: transparent; color: var(--ink); border: 1px solid var(--ink); padding: 8px 16px; font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.count { font-size: 13px; color: var(--muted); margin-top: 20px; max-width: none; }
+.cards { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.card { display: grid; grid-template-rows: auto 1fr; gap: 14px; align-content: start; }
+.tile { background: var(--bone); aspect-ratio: 5 / 4; padding: 14px; display: grid; align-content: space-between; }
+.tile .n { font: 600 10px var(--sans); letter-spacing: 0.16em; color: var(--muted); }
+.tile .yr { font: 700 clamp(26px, 2.6vw, 34px)/1 var(--display); font-variant-numeric: tabular-nums; }
+.tile .age { display: block; margin-top: 6px; font: 600 9px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.card .body { display: grid; gap: 8px; align-content: start; justify-items: start; }
+.card h3 { font: 600 15px/1.25 var(--sans); letter-spacing: -0.01em; text-transform: uppercase; }
+.card p { color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+.card .why b { color: var(--ink); font-weight: 600; }
 .tags { display: flex; gap: 6px; flex-wrap: wrap; }
-.tags span { font: 600 10px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--line); padding: 3px 10px; color: var(--ink); }
+.tags span { font: 600 9px var(--sans); letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--line); padding: 3px 8px; }
 
 /* reflection */
 .phil { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: start; }
 .phil > * { min-width: 0; }
-.phil .rowsx > h2 { padding: 0 0 36px; font-size: clamp(36px, 4.6vw, 60px); }
+.phil .rowsx > h2 { padding: 0 0 36px; }
 .phil .row { padding: 30px 0; border-top: 1px solid var(--line); display: grid; gap: 10px; }
-.phil .row h3 { font-size: 28px; }
+.phil .row h3 { font: 600 20px/1.15 var(--sans); letter-spacing: -0.02em; text-transform: uppercase; }
 .phil .row p { color: var(--muted); font-size: 15.5px; max-width: 66ch; }
 .phil .row p b { color: var(--ink); font-weight: 600; }
-.phil .art { background: var(--stone); display: grid; place-items: start center; padding: 40px 28px; position: sticky; top: 96px; }
-.phil .art .ph { width: min(100%, 320px); aspect-ratio: 4 / 5; border: 8px solid var(--panel); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16); }
+.phil .art { background: var(--taupe); display: grid; place-items: start center; padding: 40px 28px; position: sticky; top: 96px; }
 .phil .art figure { margin: 0; display: grid; gap: 12px; }
+.phil .art .ph { width: min(100%, 320px); aspect-ratio: 4 / 5; border: 8px solid var(--paper); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16); }
 
 /* references */
 .refs { display: grid; gap: 16px; justify-items: start; }
@@ -239,69 +200,74 @@ details[open] .plus { transform: rotate(45deg); }
 .contact > * { min-width: 0; }
 .contact .left { display: grid; gap: 20px; justify-items: start; }
 .contact .left p { color: var(--muted); }
-.cards { display: grid; border-top: 1px solid var(--line); }
+.clist { display: grid; border-top: 1px solid var(--line); }
 .crow { display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); }
-.crow .k { font: 600 10px var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.crow .k { font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
 .crow .v { font-size: 17px; overflow-wrap: anywhere; }
-.crow .v a { text-decoration: none; }
-.copy { background: transparent; color: var(--ink); border: 1px solid var(--ink); padding: 7px 14px; font: 600 10px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; min-width: 78px; }
+.copy { background: transparent; color: var(--ink); border: 1px solid var(--ink); padding: 7px 14px; font: 600 10px var(--sans); letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; min-width: 78px; }
 
-footer { background: var(--band); color: var(--band-ink); }
-footer .inner { display: flex; justify-content: space-between; gap: 14px 24px; flex-wrap: wrap; padding-block: 30px; font: 500 11px var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; }
+footer { border-top: 1px solid var(--line); }
+footer .inner { display: flex; justify-content: space-between; gap: 14px 24px; flex-wrap: wrap; padding-block: 28px; font: 600 10px var(--sans); letter-spacing: 0.16em; text-transform: uppercase; }
+footer .fl { display: flex; gap: 8px 22px; flex-wrap: wrap; }
 footer a { text-decoration: none; }
 footer a:hover { text-decoration: underline; text-underline-offset: 5px; }
-footer .fl { display: flex; gap: 8px 22px; flex-wrap: wrap; }
-footer .cp { color: var(--band-muted); }
+footer .cp { color: var(--muted); }
 
+@media (max-width: 1100px) {
+  .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .links { gap: 16px; }
+}
 @media (max-width: 960px) {
   .strip .grid { grid-template-columns: 1fr 1fr; }
-  .strip .item:nth-child(3) { padding-left: 0; border-left: 0; }
-  .strip .item:nth-child(n+3) { border-top: 1px solid var(--band-line); }
+  .strip .item:nth-child(3) { padding-left: 0; }
+  .strip .item:nth-child(n+3) { border-top: 1px solid rgba(237, 232, 220, 0.2); }
   .facts { grid-template-columns: 1fr 1fr; }
-  .fact:nth-child(3) { padding-left: 0; border-left: 0; }
+  .fact:nth-child(3) { padding-left: 0; }
   .fact:nth-child(n+3) { border-top: 1px solid var(--line); }
-  .links { gap: 16px; }
 }
 @media (max-width: 860px) {
   .pad { padding-block: 56px; }
   .topbar span:nth-child(2) { display: none; }
   .navgrid { grid-template-columns: 1fr auto; grid-template-areas: "logo btn" "l l" "r r"; gap: 0 16px; padding-block: 12px; }
-  .logo { grid-area: logo; font-size: 22px; }
+  .logo { grid-area: logo; font-size: 24px; }
   .menu-btn { display: inline-flex; grid-area: btn; }
   .links { display: none; flex-direction: column; gap: 0; border-top: 1px solid var(--line); margin-top: 12px; }
   .links.r { margin-top: 0; }
   .links.l, .links.r { justify-self: stretch; }
-  .links.l { grid-area: l; } .links.r { grid-area: r; }
+  .links.l { grid-area: l; }
+  .links.r { grid-area: r; }
   .links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); }
   .nav.open .links { display: flex; }
   .stage-row { grid-template-columns: 1fr 1fr; gap: 28px 16px; margin-top: calc(var(--wm) * -0.08); }
   .plinth { grid-column: 1 / -1; grid-row: 1; width: min(100%, 440px); justify-self: center; }
-  .side.l { grid-row: 2; } .side.r { grid-row: 2; }
-  .split, .contact, .phil { grid-template-columns: 1fr; gap: 36px; }
+  .side.l, .side.r { grid-row: 2; }
+  .banner .inner, .split, .contact, .phil { grid-template-columns: 1fr; gap: 36px; }
+  .banner .stack { padding-block: 48px 0; }
+  .banner .slab { padding-bottom: 0; }
   .split.flip > .fig { order: 0; }
   .phil .art { position: static; padding: 28px 16px; }
   .rows > div { grid-template-columns: 1fr; gap: 6px; }
-  .tl li { grid-template-columns: minmax(0, 1fr); gap: 8px; padding-left: 22px; }
-  .when { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-  .yr { font-size: 32px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .crow { grid-template-columns: minmax(0, 1fr) auto; }
   .crow .k { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
   .strip .grid, .facts { grid-template-columns: 1fr; }
-  .strip .item, .strip .item + .item { padding: 22px 0; border-left: 0; }
-  .strip .item + .item { border-top: 1px solid var(--band-line); }
-  .fact, .fact + .fact { padding: 20px 0; border-left: 0; }
+  .strip .item, .strip .item + .item { padding: 22px 0; }
+  .strip .item + .item { border-top: 1px solid rgba(237, 232, 220, 0.2); }
+  .fact, .fact + .fact { padding: 20px 0; }
   .fact + .fact { border-top: 1px solid var(--line); }
   .board { padding: 24px; }
-  .names .inner { font-size: 24px; }
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .tile { aspect-ratio: 16 / 7; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .track { animation: none; }
   .btn, .plus { transition: none; }
 }
 </style>
+</head>
+<body>
 
 <div class="topbar wrap">
   <div class="inner">
@@ -319,7 +285,7 @@ footer .cp { color: var(--band-muted); }
       <li><a href="#teens">Teen years</a></li>
       <li><a href="#now">Now</a></li>
     </ul>
-    <a class="logo" href="#top">Piolo Justine Sese</a>
+    <a class="logo" href="#top">Piolo</a>
     <ul class="links r">
       <li><a href="#theories">Theories</a></li>
       <li><a href="#timeline">Timeline</a></li>
@@ -335,14 +301,13 @@ footer .cp { color: var(--band-muted); }
   <!-- Home -->
   <section class="hero">
     <div class="wrap"><div class="inner">
-      <p class="eyebrow">Piolo Justine D. Sese · Developmental Psychology</p>
       <h1 class="wordmark">Piolo</h1>
       <div class="stage-row">
         <div class="side l">
-          <p class="kicker">Between my past<br>and becoming</p>
+          <p class="kicker"><b>Welcome to my<br>developmental journey</b></p>
           <a class="btn" href="#about">Begin the journey</a>
         </div>
-        <figure class="plinth" style="margin:0">
+        <figure class="plinth">
           <!-- PHOTO: replace the placeholder with <div class="frame ph has-img"><img src="welcome.jpg" alt="Piolo smiling"></div> -->
           <div class="frame ph" role="img" aria-label="Placeholder for Piolo's welcome photo"><span class="tag">Welcome photo</span></div>
           <div class="block"></div>
@@ -355,68 +320,42 @@ footer .cp { color: var(--band-muted); }
     </div></div>
   </section>
 
-  <div class="band" aria-hidden="true">
-    <div class="track"><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span><span>Between my past and becoming</span></div>
-  </div>
-
-  <!-- Welcome and what to expect -->
-  <section id="about">
-    <div class="wrap"><div class="inner pad split">
-      <div class="stack">
-        <span class="label">Welcome</span>
-        <h2 class="big">Welcome to my developmental <em>journey</em></h2>
-        <p class="lede">Between My Past And Becoming: A Personal Journey Through Developmental Milestones</p>
-        <p>Hi, I'm Piolo Justine Sese, a 19-year-old second-year psychology student from Pampanga, Philippines. I am a work in progress, continuously learning from my experiences and finding my way toward the person I aspire to become.</p>
-        <p>This site walks you through my development from before birth to today and connects my own story to developmental theories.</p>
-      </div>
-      <ul class="expect">
-        <li><b>4</b><span>Life stages, from infancy to emerging adulthood</span></li>
-        <li><b>3</b><span>Developmental theories: Erikson, Piaget and Bronfenbrenner</span></li>
-        <li><b>10</b><span>Milestones on a timeline across physical, cognitive, emotional and social growth</span></li>
-        <li><b>1</b><span>Reflection on the person I am becoming</span></li>
-      </ul>
-    </div></div>
-  </section>
-
-  <!-- Stage index -->
-  <section class="strip" aria-label="The four stages" style="border-bottom:0">
+  <!-- Stage strip -->
+  <section class="strip" aria-label="The four stages">
     <div class="wrap"><div class="inner grid">
       <div class="item">
         <div class="thumb ph" aria-hidden="true"></div>
-        <div class="txt"><span class="st">Stage 1 · 0 to 2 years</span><h3>Beginning</h3><p>Born early, smiling often.</p><a href="#beginning">Read more →</a></div>
+        <div class="txt"><h3>Beginning</h3><p>Born early, smiling often.</p><a href="#beginning">Read more →</a></div>
       </div>
       <div class="item">
         <div class="thumb ph alt" aria-hidden="true"></div>
-        <div class="txt"><span class="st">Stage 2 · Childhood</span><h3>Childhood</h3><p>Books, a keyboard and first friends.</p><a href="#childhood">Read more →</a></div>
+        <div class="txt"><h3>Childhood</h3><p>Books, a keyboard and first friends.</p><a href="#childhood">Read more →</a></div>
       </div>
       <div class="item">
         <div class="thumb ph" aria-hidden="true"></div>
-        <div class="txt"><span class="st">Stage 3 · Adolescence</span><h3>Teen years</h3><p>Questions, awards and a turning point.</p><a href="#teens">Read more →</a></div>
+        <div class="txt"><h3>Teen years</h3><p>Questions, awards and a turning point.</p><a href="#teens">Read more →</a></div>
       </div>
       <div class="item">
         <div class="thumb ph alt" aria-hidden="true"></div>
-        <div class="txt"><span class="st">Stage 4 · Emerging adulthood</span><h3>Now</h3><p>Independence and what comes next.</p><a href="#now">Read more →</a></div>
+        <div class="txt"><h3>Now</h3><p>Independence and what comes next.</p><a href="#now">Read more →</a></div>
       </div>
     </div></div>
   </section>
 
-  <!-- Motto -->
-  <section class="feature" aria-label="My theme">
-    <div class="wrap"><div class="inner pad split">
+  <!-- Feature banner: theme -->
+  <section class="banner" aria-label="My theme">
+    <div class="wrap"><div class="inner">
       <div class="stack">
         <span class="label">My theme</span>
         <blockquote>“I am more than where I began; I am everything I have grown through.”</blockquote>
         <a class="btn" href="#reflection">Read my reflection</a>
       </div>
-      <figure class="fig" style="margin:0">
-        <div class="board" style="background:transparent;padding:0">
-          <div class="slab">
-            <!-- PHOTO: replace with <div class="ph has-img"><img src="theme.jpg" alt="..."></div> -->
-            <div class="ph alt" role="img" aria-label="Placeholder for a personal photo"><span class="tag">Personal photo</span></div>
-            <div class="block"></div>
-          </div>
+      <figure class="fig">
+        <div class="slab">
+          <!-- PHOTO: replace with <div class="ph has-img"><img src="theme.jpg" alt="..."></div> -->
+          <div class="ph alt" role="img" aria-label="Placeholder for a personal photo"><span class="tag">Personal photo</span></div>
+          <div class="block"></div>
         </div>
-        <figcaption>A photo from the family album</figcaption>
       </figure>
     </div></div>
   </section>
@@ -443,12 +382,31 @@ footer .cp { color: var(--band-muted); }
     </div></div>
   </section>
 
+  <!-- Welcome and what to expect -->
+  <section id="about">
+    <div class="wrap"><div class="inner pad split">
+      <div class="stack">
+        <span class="label">Welcome</span>
+        <h2 class="title">Welcome to my developmental journey</h2>
+        <p class="lede">Between My Past And Becoming: A Personal Journey Through Developmental Milestones</p>
+        <p>Hi, I'm Piolo Justine Sese, a 19-year-old second-year psychology student from Pampanga, Philippines. I am a work in progress, continuously learning from my experiences and finding my way toward the person I aspire to become.</p>
+        <p>This site walks you through my development from before birth to today and connects my own story to developmental theories.</p>
+      </div>
+      <ul class="expect">
+        <li><b>4</b><span>Life stages, from infancy to emerging adulthood</span></li>
+        <li><b>3</b><span>Developmental theories: Erikson, Piaget and Bronfenbrenner</span></li>
+        <li><b>10</b><span>Milestones on a timeline across physical, cognitive, emotional and social growth</span></li>
+        <li><b>1</b><span>Reflection on the person I am becoming</span></li>
+      </ul>
+    </div></div>
+  </section>
+
   <!-- Stage 1 -->
   <section id="beginning">
     <div class="wrap"><div class="inner pad split">
       <div class="stack">
         <span class="label">Stage 1 · Prenatal development and infancy · Conception to 2 years</span>
-        <h2 class="big">My <em>beginning</em></h2>
+        <h2 class="title">My beginning</h2>
         <p>I was born on September 17, 2007, at Mother Teresa of Calcutta Medical Center in San Fernando City, Pampanga. I am the third of four siblings, and I arrived earlier than expected: about seven months into the pregnancy, after a sudden medical emergency. That unexpected start was the first chapter of my developmental journey. What I know about my mother's pregnancy is limited, so I leave it as unknown.</p>
         <p>My mother says I was crawling at eight months and soon pulling myself up to take small steps while holding onto nearby objects. I smiled a lot, a habit I still have. My first recorded word was “Daning,” the name my siblings and I use for our mother.</p>
         <p>My parents and older siblings took turns looking after me. Their steady presence gave me a sense of security, which I now see as the foundation of a secure attachment. Relatives remember a cheerful, expressive baby who babbled and made sounds to everyone, and who rarely cried when different people carried me.</p>
@@ -459,7 +417,7 @@ footer .cp { color: var(--band-muted); }
           <li>A cheerful, babbling baby who felt secure with many people</li>
         </ul>
       </div>
-      <figure class="fig" style="margin:0">
+      <figure class="fig">
         <div class="board">
           <!-- PHOTO: replace with <div class="ph has-img"><img src="infancy.jpg" alt="Piolo as a baby"></div> -->
           <div class="ph" role="img" aria-label="Placeholder for an infancy photo"><span class="tag">Age 0 to 2</span></div>
@@ -474,7 +432,7 @@ footer .cp { color: var(--band-muted); }
     <div class="wrap"><div class="inner pad split flip">
       <div class="stack">
         <span class="label">Stage 2 · Early and middle childhood</span>
-        <h2 class="big">My <em>childhood</em></h2>
+        <h2 class="title">My childhood</h2>
         <p>One of my earliest memories is my first birthday at our family home. There were many visitors, mostly cousins and relatives, and I was carried from one family member to another all through the celebration.</p>
         <p>By age 3 I had a basic understanding of English, thanks to my interest in books. Our home had reading materials about animals, astronomy and interesting facts, and they pushed me to explore on my own. By age 4 I could speak clearly, and I learned these early language skills through my own curiosity, without direct help from anyone.</p>
         <p>School began with an embarrassing moment: I accidentally wet my shorts in class. I felt shy, and it dented my confidence in talking to classmates. In Grade 1, I was no longer with the classmates I knew from Kindergarten, so I started approaching others and beginning friendships instead of letting shyness decide for me. My cheerful, friendly nature helped.</p>
@@ -488,7 +446,7 @@ footer .cp { color: var(--band-muted); }
           <li>Teaching myself the electric keyboard until Grade 5</li>
         </ul>
       </div>
-      <figure class="fig" style="margin:0">
+      <figure class="fig">
         <div class="board">
           <!-- PHOTO: replace with <div class="ph has-img"><img src="childhood.jpg" alt="Piolo as a child"></div> -->
           <div class="ph alt" role="img" aria-label="Placeholder for a childhood photo"><span class="tag">Childhood</span></div>
@@ -503,7 +461,7 @@ footer .cp { color: var(--band-muted); }
     <div class="wrap"><div class="inner pad split">
       <div class="stack">
         <span class="label">Stage 3 · Adolescence</span>
-        <h2 class="big">My teenage <em>years</em></h2>
+        <h2 class="title">My teenage years</h2>
         <p>I was relatively short as a child and grew taller as I entered adolescence. It was one of the clearest physical changes marking my move from childhood into my teenage years.</p>
         <p>I became more aware of my emotions and of how my actions affected people around me. My thinking grew more reflective. I formed stronger opinions, questioned certain beliefs, and considered other perspectives before deciding. There were moments of uncertainty and mood changes, but they gave me more self-awareness and maturity.</p>
         <p>My friendships became more meaningful as I learned to value genuine connections and accept that not everyone would stay in my life. My family became a source of guidance while I took on more independence and responsibility for my decisions. School brought new academic expectations that made me more adaptable and responsible.</p>
@@ -516,7 +474,7 @@ footer .cp { color: var(--band-muted); }
           <li>Academic burnout, and a turning point in how I measure my worth</li>
         </ul>
       </div>
-      <figure class="fig" style="margin:0">
+      <figure class="fig">
         <div class="board">
           <!-- PHOTO: replace with <div class="ph has-img"><img src="teen.jpg" alt="Piolo as a teenager"></div> -->
           <div class="ph" role="img" aria-label="Placeholder for a teenage photo"><span class="tag">Teen years</span></div>
@@ -531,7 +489,7 @@ footer .cp { color: var(--band-muted); }
     <div class="wrap"><div class="inner pad split flip">
       <div class="stack">
         <span class="label">Stage 4 · My present self · Emerging adulthood</span>
-        <h2 class="big">Who I am <em>now</em></h2>
+        <h2 class="title">Who I am now</h2>
         <p>Emerging adulthood fits me best right now: a period of growing independence, self-discovery and thinking about what comes next. I am a second-year psychology student from Pampanga, learning to take responsibility for my decisions while I explore my values, interests and long-term goals. In my first year of college I was included in the Dean's List.</p>
         <p>College taught me to manage my time and balance schoolwork with my personal life. I make more of my own decisions and handle my own expenses, and that has made me more independent, disciplined and accountable. My relationships with family and friends have stayed steady. My responsibilities have changed, but the people who support me matter just as much.</p>
         <p>I see myself as curious, expressive and growth-oriented. I enjoy reading, writing and exploring ideas. My strengths are creativity, adaptability and a willingness to understand different perspectives, and I value authenticity, self-awareness and the freedom to grow at my own pace.</p>
@@ -544,7 +502,7 @@ footer .cp { color: var(--band-muted); }
           <li>Finishing my degree and discovering my path</li>
         </ul>
       </div>
-      <figure class="fig" style="margin:0">
+      <figure class="fig">
         <div class="board">
           <!-- PHOTO: replace with <div class="ph alt has-img"><img src="today.jpg" alt="Piolo today"></div> -->
           <div class="ph alt" role="img" aria-label="Placeholder for a photo of Piolo today"><span class="tag">Today</span></div>
@@ -554,15 +512,11 @@ footer .cp { color: var(--band-muted); }
     </div></div>
   </section>
 
-  <section class="names band" aria-label="Values" style="border-bottom:0">
-    <div class="wrap"><div class="inner"><span>Curious</span><span>Expressive</span><span>Growth-oriented</span><span>Authentic</span></div></div>
-  </section>
-
   <!-- Theories -->
   <section id="theories">
     <div class="wrap"><div class="inner pad center">
       <span class="label">Developmental theories</span>
-      <h2 class="big">Theories behind <em>my story</em></h2>
+      <h2 class="title">Theories behind my story</h2>
       <p>Three theories help me understand my own experiences. Open one to read how it connects to my life.</p>
     </div></div>
     <div class="acc">
@@ -599,10 +553,12 @@ footer .cp { color: var(--band-muted); }
   <!-- Timeline -->
   <section id="timeline">
     <div class="wrap"><div class="inner pad">
-      <div class="center">
-        <span class="label">Timeline</span>
-        <h2 class="big">My developmental <em>timeline</em></h2>
-        <p>Ten milestones across physical, cognitive, emotional and social development. Filter by type of development.</p>
+      <div class="shelf-head">
+        <div class="stack">
+          <span class="label">Timeline</span>
+          <h2 class="title sm">My developmental timeline</h2>
+          <p>Ten milestones across physical, cognitive, emotional and social development.</p>
+        </div>
         <div class="chips" role="group" aria-label="Filter milestones">
           <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="chip" type="button" data-filter="physical" aria-pressed="false">Physical</button>
@@ -610,75 +566,75 @@ footer .cp { color: var(--band-muted); }
           <button class="chip" type="button" data-filter="emotional" aria-pressed="false">Emotional</button>
           <button class="chip" type="button" data-filter="social" aria-pressed="false">Social</button>
         </div>
-        <p class="count" id="tl-count" role="status">Showing all 10 milestones</p>
       </div>
-      <ol class="tl" id="tl">
-        <li data-types="physical">
-          <div class="when"><span class="yr">2007</span><span class="age">At birth</span></div>
-          <div class="what"><h3>Born early</h3>
+      <p class="count" id="tl-count" role="status">Showing all 10 milestones</p>
+      <ol class="cards" id="tl">
+        <li class="card" data-types="physical">
+          <div class="tile"><span class="n">01</span><div><span class="yr">2007</span><span class="age">At birth</span></div></div>
+          <div class="body"><h3>Born early</h3>
             <div class="tags"><span>Physical</span><span>Prenatal</span></div>
             <p>I was born at about seven months of gestation after a sudden medical emergency, at Mother Teresa of Calcutta Medical Center in San Fernando City, Pampanga.</p>
             <p class="why"><b>Why it mattered:</b> My early arrival began my developmental journey and became an important part of my family's story.</p></div>
         </li>
-        <li data-types="physical">
-          <div class="when"><span class="yr">2008</span><span class="age">8 months old</span></div>
-          <div class="what"><h3>Crawling and first steps</h3>
+        <li class="card" data-types="physical">
+          <div class="tile"><span class="n">02</span><div><span class="yr">2008</span><span class="age">8 months old</span></div></div>
+          <div class="body"><h3>Crawling and first steps</h3>
             <div class="tags"><span>Physical</span><span>Motor</span></div>
             <p>According to my mother, I was already crawling and beginning to pull myself up and take small steps while holding onto nearby objects.</p>
             <p class="why"><b>Why it mattered:</b> These milestones were my early development of movement, coordination and physical independence.</p></div>
         </li>
-        <li data-types="social emotional">
-          <div class="when"><span class="yr">2008</span><span class="age">1 year old</span></div>
-          <div class="what"><h3>A first birthday with family</h3>
+        <li class="card" data-types="social emotional">
+          <div class="tile"><span class="n">03</span><div><span class="yr">2008</span><span class="age">1 year old</span></div></div>
+          <div class="body"><h3>A first birthday with family</h3>
             <div class="tags"><span>Social</span><span>Emotional</span></div>
             <p>I celebrated my first birthday at our family home, surrounded by cousins and relatives who gathered for the occasion.</p>
             <p class="why"><b>Why it mattered:</b> It remains one of my earliest memories of celebrating and spending time with my extended family.</p></div>
         </li>
-        <li data-types="cognitive">
-          <div class="when"><span class="yr">2010</span><span class="age">3 years old</span></div>
-          <div class="what"><h3>Reading on my own</h3>
+        <li class="card" data-types="cognitive">
+          <div class="tile"><span class="n">04</span><div><span class="yr">2010</span><span class="age">3 years old</span></div></div>
+          <div class="body"><h3>Reading on my own</h3>
             <div class="tags"><span>Cognitive</span><span>Language</span></div>
             <p>I became interested in books about animals, astronomy and interesting facts, which helped me explore and learn independently.</p>
             <p class="why"><b>Why it mattered:</b> It showed my early curiosity and became the foundation of my lifelong interest in reading.</p></div>
         </li>
-        <li data-types="cognitive">
-          <div class="when"><span class="yr">2011</span><span class="age">4 years old</span></div>
-          <div class="what"><h3>Speaking clearly</h3>
+        <li class="card" data-types="cognitive">
+          <div class="tile"><span class="n">05</span><div><span class="yr">2011</span><span class="age">4 years old</span></div></div>
+          <div class="body"><h3>Speaking clearly</h3>
             <div class="tags"><span>Cognitive</span><span>Language</span></div>
             <p>I could already speak clearly and had basic English skills from my early exposure to reading materials.</p>
             <p class="why"><b>Why it mattered:</b> It reflected my growing ability to communicate and express my thoughts.</p></div>
         </li>
-        <li data-types="emotional social">
-          <div class="when"><span class="yr">2012</span><span class="age">5 years old</span></div>
-          <div class="what"><h3>An embarrassing day at school</h3>
+        <li class="card" data-types="emotional social">
+          <div class="tile"><span class="n">06</span><div><span class="yr">2012</span><span class="age">5 years old</span></div></div>
+          <div class="body"><h3>An embarrassing day at school</h3>
             <div class="tags"><span>Emotional</span><span>Social</span></div>
             <p>I accidentally wet my shorts during class, which made me shy about approaching and talking to my classmates.</p>
             <p class="why"><b>Why it mattered:</b> It became one of my most memorable early school experiences and influenced how I viewed social interactions.</p></div>
         </li>
-        <li data-types="cognitive physical">
-          <div class="when"><span class="yr">2013 to 2017</span><span class="age">6 to 10 years old</span></div>
-          <div class="what"><h3>Teaching myself the keyboard</h3>
+        <li class="card" data-types="cognitive physical">
+          <div class="tile"><span class="n">07</span><div><span class="yr">2013–17</span><span class="age">6 to 10 years old</span></div></div>
+          <div class="body"><h3>Teaching myself the keyboard</h3>
             <div class="tags"><span>Cognitive</span><span>Motor</span></div>
             <p>I discovered our electric keyboard at home and learned to play it independently through exploration and practice.</p>
             <p class="why"><b>Why it mattered:</b> It reflected my curiosity, creativity and willingness to explore new interests on my own.</p></div>
         </li>
-        <li data-types="cognitive emotional">
-          <div class="when"><span class="yr">2012 to 2025</span><span class="age">5 to 18 years old</span></div>
-          <div class="what"><h3>Academic excellence awards</h3>
+        <li class="card" data-types="cognitive emotional">
+          <div class="tile"><span class="n">08</span><div><span class="yr">2012–25</span><span class="age">5 to 18 years old</span></div></div>
+          <div class="body"><h3>Academic excellence awards</h3>
             <div class="tags"><span>Cognitive</span><span>Emotional</span></div>
             <p>I received academic excellence awards in recognition of my performance and dedication to my studies.</p>
             <p class="why"><b>Why it mattered:</b> They became meaningful milestones, although they also changed how I viewed academic recognition and personal worth.</p></div>
         </li>
-        <li data-types="cognitive">
-          <div class="when"><span class="yr">2025</span><span class="age">18 years old</span></div>
-          <div class="what"><h3>Dean's List</h3>
+        <li class="card" data-types="cognitive">
+          <div class="tile"><span class="n">09</span><div><span class="yr">2025</span><span class="age">18 years old</span></div></div>
+          <div class="body"><h3>Dean's List</h3>
             <div class="tags"><span>Cognitive</span><span>Personal</span></div>
             <p>I was included in the Dean's List during my first year of college in recognition of my academic performance.</p>
             <p class="why"><b>Why it mattered:</b> It is one of my most memorable college achievements and reminded me of the effort I put into my education.</p></div>
         </li>
-        <li data-types="cognitive emotional social">
-          <div class="when"><span class="yr">2026</span><span class="age">19 years old</span></div>
-          <div class="what"><h3>Exploring who I am</h3>
+        <li class="card" data-types="cognitive emotional social">
+          <div class="tile"><span class="n">10</span><div><span class="yr">2026</span><span class="age">19 years old</span></div></div>
+          <div class="body"><h3>Exploring who I am</h3>
             <div class="tags"><span>Cognitive</span><span>Emotional</span><span>Social</span></div>
             <p>As a second-year psychology student, I continue to explore my identity, build independence and look for possible career paths.</p>
             <p class="why"><b>Why it mattered:</b> This stage is my continuing journey toward self-understanding, personal growth and adulthood.</p></div>
@@ -689,35 +645,37 @@ footer .cp { color: var(--band-muted); }
 
   <!-- Reflection -->
   <section id="reflection">
-    <div class="wrap"><div class="inner pad phil"><div class="rowsx">
-      <h2>Reflecting on the person <em>I am becoming</em></h2>
-      <div class="row"><h3>The milestone that <em>shaped me</em></h3><p>Learning to build friendships in my early school years had the greatest impact on who I am today. I used to be shy and hesitant to approach other children, especially after the embarrassment I felt in Kindergarten. When I entered Grade 1, I decided to be more open and take the first step with my new classmates. That made me more confident, expressive and comfortable with different kinds of people. It also taught me that personal growth often begins when I step outside my comfort zone.</p></div>
-      <div class="row"><h3>Who and what <em>influenced me</em></h3><p>My family, especially my parents and siblings, influenced me most, because they gave me care, guidance and support throughout my childhood. School mattered too: time with classmates and teachers made me more confident, sociable and responsible. Reading and exploring different topics early fed my curiosity and independent learning, and as I grew older, technology opened more ways to find information, discover new interests and widen my perspective.</p></div>
-      <div class="row">
-        <h3>How I have <em>changed</em></h3>
-        <p><b>Physically:</b> I grew taller during adolescence after being relatively short as a child.</p>
-        <p><b>Cognitively:</b> I became more curious and built independent learning habits, such as exploring books about animals and astronomy at an early age.</p>
-        <p><b>Emotionally:</b> I became more self-aware and learned to manage my feelings, especially under academic pressure and personal expectations.</p>
-        <p><b>Socially:</b> I became more confident approaching people, starting with the friendships I initiated in Grade 1.</p>
+    <div class="wrap"><div class="inner pad phil">
+      <div class="rowsx">
+        <h2 class="title">Reflecting on the person I am becoming</h2>
+        <div class="row"><h3>The milestone that shaped me</h3><p>Learning to build friendships in my early school years had the greatest impact on who I am today. I used to be shy and hesitant to approach other children, especially after the embarrassment I felt in Kindergarten. When I entered Grade 1, I decided to be more open and take the first step with my new classmates. That made me more confident, expressive and comfortable with different kinds of people. It also taught me that personal growth often begins when I step outside my comfort zone.</p></div>
+        <div class="row"><h3>Who and what influenced me</h3><p>My family, especially my parents and siblings, influenced me most, because they gave me care, guidance and support throughout my childhood. School mattered too: time with classmates and teachers made me more confident, sociable and responsible. Reading and exploring different topics early fed my curiosity and independent learning, and as I grew older, technology opened more ways to find information, discover new interests and widen my perspective.</p></div>
+        <div class="row">
+          <h3>How I have changed</h3>
+          <p><b>Physically:</b> I grew taller during adolescence after being relatively short as a child.</p>
+          <p><b>Cognitively:</b> I became more curious and built independent learning habits, such as exploring books about animals and astronomy at an early age.</p>
+          <p><b>Emotionally:</b> I became more self-aware and learned to manage my feelings, especially under academic pressure and personal expectations.</p>
+          <p><b>Socially:</b> I became more confident approaching people, starting with the friendships I initiated in Grade 1.</p>
+        </div>
+        <div class="row"><h3>What I have learned</h3><p>My development was shaped by big milestones and also by ordinary experiences I once overlooked. Looking back at childhood, adolescence and today, I can see how much I have changed physically, cognitively, emotionally and socially. Some of my strengths, interests and values came from the people I met and the challenges I faced. Growth is not measured only by achievements, but also by the lessons I take from my experiences. I am still discovering who I am, and every stage has contributed to the person I am becoming.</p></div>
+        <div class="row"><h3>Who I hope to become</h3><p>I hope to be confident and secure in my own decisions, without constantly feeling the need to meet other people's expectations. One goal is to build greater self-confidence and trust my own abilities. I want to be more comfortable with uncertainty and accept that I do not need to have everything figured out right away. I also hope to stay open to learning and improving, and to make meaningful choices that follow my own values.</p></div>
+        <div class="row"><h3>The theory that helped most</h3><p>Erikson's psychosocial theory helped me understand myself best, especially the stage of Identity vs. Role Confusion. It made me realize that questioning my beliefs, values, interests and future goals is a natural part of building an identity. I noticed that my changing view of academic achievement and personal expectations in adolescence still shapes how I see myself. My identity is not defined only by what I accomplish or by what other people expect of me. It keeps developing as I gain new experiences, make decisions and find out what matters to me.</p></div>
       </div>
-      <div class="row"><h3>What I have <em>learned</em></h3><p>My development was shaped by big milestones and also by ordinary experiences I once overlooked. Looking back at childhood, adolescence and today, I can see how much I have changed physically, cognitively, emotionally and socially. Some of my strengths, interests and values came from the people I met and the challenges I faced. Growth is not measured only by achievements, but also by the lessons I take from my experiences. I am still discovering who I am, and every stage has contributed to the person I am becoming.</p></div>
-      <div class="row"><h3>Who I hope <em>to become</em></h3><p>I hope to be confident and secure in my own decisions, without constantly feeling the need to meet other people's expectations. One goal is to build greater self-confidence and trust my own abilities. I want to be more comfortable with uncertainty and accept that I do not need to have everything figured out right away. I also hope to stay open to learning and improving, and to make meaningful choices that follow my own values.</p></div>
-      <div class="row"><h3>The theory that helped <em>most</em></h3><p>Erikson's psychosocial theory helped me understand myself best, especially the stage of Identity vs. Role Confusion. It made me realize that questioning my beliefs, values, interests and future goals is a natural part of building an identity. I noticed that my changing view of academic achievement and personal expectations in adolescence still shapes how I see myself. My identity is not defined only by what I accomplish or by what other people expect of me. It keeps developing as I gain new experiences, make decisions and find out what matters to me.</p></div>
-    </div>
-    <div class="art">
-      <figure>
-        <!-- PHOTO: replace with <div class="ph has-img"><img src="reflection.jpg" alt="..."></div> -->
-        <div class="ph alt" role="img" aria-label="Placeholder for a reflection photo"><span class="tag">Reflection</span></div>
-        <figcaption>Still becoming</figcaption>
-      </figure>
-    </div></div></div>
+      <div class="art">
+        <figure>
+          <!-- PHOTO: replace with <div class="ph has-img"><img src="reflection.jpg" alt="..."></div> -->
+          <div class="ph alt" role="img" aria-label="Placeholder for a reflection photo"><span class="tag">Reflection</span></div>
+          <figcaption>Still becoming</figcaption>
+        </figure>
+      </div>
+    </div></div>
   </section>
 
   <!-- References -->
   <section id="references">
     <div class="wrap"><div class="inner pad refs">
       <span class="label">Sources</span>
-      <h2 class="big"><em>References</em> and credits</h2>
+      <h2 class="title sm">References and credits</h2>
       <p>The theory sections use these sources, cited in APA 7th edition style.</p>
       <p class="ref">Branje, S., de Moor, E. L., Spitzer, J., &amp; Becht, A. I. (2021). Dynamics of identity development in adolescence: A decade in review. <i>Journal of Research on Adolescence, 31</i>(4), 908–927. <a href="https://doi.org/10.1111/jora.12678">https://doi.org/10.1111/jora.12678</a></p>
       <p class="ref">Dimova, E. D., Roddick, K., Hunter, S. C., et al. (2026). The application of Bronfenbrenner's bio-ecological model in children and young people's mental health research: A rapid review. <i>Child Psychiatry &amp; Human Development</i>. <a href="https://doi.org/10.1007/s10578-026-02019-1">https://doi.org/10.1007/s10578-026-02019-1</a></p>
@@ -731,10 +689,10 @@ footer .cp { color: var(--band-muted); }
     <div class="wrap"><div class="inner pad contact">
       <div class="left">
         <span class="label">Contact</span>
-        <h2 class="big">Get in <em>touch</em></h2>
+        <h2 class="title">Get in touch</h2>
         <p>Have a question about my journey, or just want to say hi? Reach me with the details here.</p>
       </div>
-      <div class="cards">
+      <div class="clist">
         <div class="crow"><span class="k">Name</span><span class="v" id="c-name">Piolo Justine D. Sese</span><button class="copy" type="button" data-target="c-name">Copy</button></div>
         <div class="crow"><span class="k">Phone</span><span class="v" id="c-phone">+63 916 504 5235</span><button class="copy" type="button" data-target="c-phone">Copy</button></div>
         <div class="crow"><span class="k">Email</span><span class="v" id="c-mail">piolojustinesese@gmail.com</span><button class="copy" type="button" data-target="c-mail">Copy</button></div>
@@ -820,5 +778,5 @@ footer .cp { color: var(--band-muted); }
   });
 })();
 </script>
-
-</body></html>
+</body>
+</html>
