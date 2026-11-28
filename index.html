@@ -265,6 +265,27 @@ footer .cp { color: var(--muted); }
   html { scroll-behavior: auto; }
   .btn, .plus { transition: none; }
 }
+
+/* Full-page welcome photo */
+.hero { position: relative; display: grid; padding: 0; min-height: 100vh; min-height: calc(100svh - 110px); color: var(--paper); }
+.hero-photo { position: absolute; inset: 0; background: var(--ph-a); }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; }
+.hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(17,16,16,.12) 0%, rgba(17,16,16,.12) 40%, rgba(17,16,16,.75) 100%); }
+.hero-over { position: relative; z-index: 1; align-self: end; width: 100%; }
+.hero .inner { padding-block: 32px 12px; }
+.hero .stage-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-top: 0; }
+.hero .kicker { color: var(--paper); }
+.hero .btn { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.hero .wordmark { color: var(--paper); margin-top: 24px; text-shadow: 0 6px 40px rgba(0, 0, 0, .35); }
+
+/* Stage photos show in full, uncropped, at their own proportions */
+.board .ph.has-img { aspect-ratio: auto; width: min(100%, 420px); }
+.board .ph.has-img img { position: static; inset: auto; display: block; width: 100%; height: auto; }
+
+/* Banner and reflection photos: also shown in full. Strip thumbnails: small face-focused crops */
+.slab .ph.has-img, .phil .art .ph.has-img { aspect-ratio: auto; }
+.slab .ph.has-img img, .phil .art .ph.has-img img { position: static; inset: auto; display: block; width: 100%; height: auto; }
+.strip .thumb img { object-position: 50% 25%; }
 </style>
 </head>
 <body>
@@ -300,23 +321,18 @@ footer .cp { color: var(--muted); }
 
   <!-- Home -->
   <section class="hero">
-    <div class="wrap"><div class="inner">
-      <h1 class="wordmark">Piolo</h1>
+    <div class="hero-photo"><img src="pictures/Home Page.png" alt="Piolo smiling" fetchpriority="high"></div>
+    <div class="wrap hero-over"><div class="inner">
       <div class="stage-row">
         <div class="side l">
           <p class="kicker"><b>Welcome to my<br>developmental journey</b></p>
           <a class="btn" href="#about">Begin the journey</a>
         </div>
-        <figure class="plinth">
-          <!-- PHOTO: replace the placeholder with <div class="frame ph has-img"><img src="welcome.jpg" alt="Piolo smiling"></div> -->
-          <div class="frame ph" role="img" aria-label="Placeholder for Piolo's welcome photo"><span class="tag">Welcome photo</span></div>
-          <div class="block"></div>
-          <div class="rock"></div>
-        </figure>
         <div class="side r">
           <p class="kicker">Stage no. 1<br>Est. 2007</p>
         </div>
       </div>
+      <h1 class="wordmark">Piolo</h1>
     </div></div>
   </section>
 
@@ -324,19 +340,19 @@ footer .cp { color: var(--muted); }
   <section class="strip" aria-label="The four stages">
     <div class="wrap"><div class="inner grid">
       <div class="item">
-        <div class="thumb ph" aria-hidden="true"></div>
+        <div class="thumb ph has-img" aria-hidden="true"><img src="pictures/Infancy.png" alt="" loading="lazy" decoding="async"></div>
         <div class="txt"><h3>Beginning</h3><p>Born early, smiling often.</p><a href="#beginning">Read more →</a></div>
       </div>
       <div class="item">
-        <div class="thumb ph alt" aria-hidden="true"></div>
+        <div class="thumb ph has-img" aria-hidden="true"><img src="pictures/Childhood.png" alt="" loading="lazy" decoding="async"></div>
         <div class="txt"><h3>Childhood</h3><p>Books, a keyboard and first friends.</p><a href="#childhood">Read more →</a></div>
       </div>
       <div class="item">
-        <div class="thumb ph" aria-hidden="true"></div>
+        <div class="thumb ph has-img" aria-hidden="true"><img src="pictures/Adolescence_.jpg" alt="" loading="lazy" decoding="async"></div>
         <div class="txt"><h3>Teen years</h3><p>Questions, awards and a turning point.</p><a href="#teens">Read more →</a></div>
       </div>
       <div class="item">
-        <div class="thumb ph alt" aria-hidden="true"></div>
+        <div class="thumb ph has-img" aria-hidden="true"><img src="pictures/Present Life.png" alt="" loading="lazy" decoding="async"></div>
         <div class="txt"><h3>Now</h3><p>Independence and what comes next.</p><a href="#now">Read more →</a></div>
       </div>
     </div></div>
@@ -352,8 +368,7 @@ footer .cp { color: var(--muted); }
       </div>
       <figure class="fig">
         <div class="slab">
-          <!-- PHOTO: replace with <div class="ph has-img"><img src="theme.jpg" alt="..."></div> -->
-          <div class="ph alt" role="img" aria-label="Placeholder for a personal photo"><span class="tag">Personal photo</span></div>
+          <div class="ph has-img"><img src="pictures/Present Life.png" alt="Piolo today" loading="lazy" decoding="async"></div>
           <div class="block"></div>
         </div>
       </figure>
@@ -419,8 +434,7 @@ footer .cp { color: var(--muted); }
       </div>
       <figure class="fig">
         <div class="board">
-          <!-- PHOTO: replace with <div class="ph has-img"><img src="infancy.jpg" alt="Piolo as a baby"></div> -->
-          <div class="ph" role="img" aria-label="Placeholder for an infancy photo"><span class="tag">Age 0 to 2</span></div>
+          <div class="ph has-img"><img src="pictures/Infancy.png" alt="Piolo as a baby" loading="lazy" decoding="async"></div>
         </div>
         <figcaption>Infancy, from the family photo album</figcaption>
       </figure>
@@ -448,8 +462,7 @@ footer .cp { color: var(--muted); }
       </div>
       <figure class="fig">
         <div class="board">
-          <!-- PHOTO: replace with <div class="ph has-img"><img src="childhood.jpg" alt="Piolo as a child"></div> -->
-          <div class="ph alt" role="img" aria-label="Placeholder for a childhood photo"><span class="tag">Childhood</span></div>
+          <div class="ph has-img"><img src="pictures/Childhood.png" alt="Piolo as a child" loading="lazy" decoding="async"></div>
         </div>
         <figcaption>Childhood, from the family photo album</figcaption>
       </figure>
@@ -476,8 +489,7 @@ footer .cp { color: var(--muted); }
       </div>
       <figure class="fig">
         <div class="board">
-          <!-- PHOTO: replace with <div class="ph has-img"><img src="teen.jpg" alt="Piolo as a teenager"></div> -->
-          <div class="ph" role="img" aria-label="Placeholder for a teenage photo"><span class="tag">Teen years</span></div>
+          <div class="ph has-img"><img src="pictures/Adolescence_.jpg" alt="Piolo as a teenager" loading="lazy" decoding="async"></div>
         </div>
         <figcaption>Adolescence, from the family photo album</figcaption>
       </figure>
@@ -504,8 +516,7 @@ footer .cp { color: var(--muted); }
       </div>
       <figure class="fig">
         <div class="board">
-          <!-- PHOTO: replace with <div class="ph alt has-img"><img src="today.jpg" alt="Piolo today"></div> -->
-          <div class="ph alt" role="img" aria-label="Placeholder for a photo of Piolo today"><span class="tag">Today</span></div>
+          <div class="ph has-img"><img src="pictures/Present Life.png" alt="Piolo today" loading="lazy" decoding="async"></div>
         </div>
         <figcaption>Emerging adulthood, from the family photo album</figcaption>
       </figure>
@@ -663,8 +674,7 @@ footer .cp { color: var(--muted); }
       </div>
       <div class="art">
         <figure>
-          <!-- PHOTO: replace with <div class="ph has-img"><img src="reflection.jpg" alt="..."></div> -->
-          <div class="ph alt" role="img" aria-label="Placeholder for a reflection photo"><span class="tag">Reflection</span></div>
+          <div class="ph has-img"><img src="pictures/Home Page.png" alt="Piolo smiling" loading="lazy" decoding="async"></div>
           <figcaption>Still becoming</figcaption>
         </figure>
       </div>
